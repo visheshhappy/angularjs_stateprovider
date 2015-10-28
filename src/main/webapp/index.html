@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="MyApp">
+<head>
+	<title>this a page</title>
+</head>
+<script type="text/javascript" src="js/angular.min.js"></script>
+<!-- <script type="text/javascript" src="js/angular-route.min.js"></script> -->
+<!-- <script type="text/javascript" src="js/angular-ui-router.js"></script> -->
+<script type="text/javascript" src="js/angular-ui-router.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+
+<body ng-app="MyApp">
+<div class="jumbotron text-center">
+    <h1>The Homey Page</h1>
+    <p>This page demonstrates <span class="text-danger">nested</span> views.</p>  
+
+  
+</div>
+<div>This is my home page . it will have few links to navigate..!! lets explore..!!</div>
+<div>
+		<a ui-sref="page1">Page1</a>
+<a ui-sref="page2">Page2</a>
+</div>
+
+<div ui-view></div>
+
+
+</body>
+</html>
